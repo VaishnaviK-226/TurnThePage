@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Tinos:wght@700&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf1d2;
+  color: #121110;
+}
+
+header {
+background-color:#093577;
+color: rgb(213, 182, 26);
+font-family: 'Poppins';
+text-align: center;
+font-size: 40px;
+font-weight: 400;
+padding:1vw;
+height:10vh;
+}
+
+section {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(73, 72, 72);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #1c1b1a;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: #061f44;
+  color: rgb(213, 182, 26);
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins';
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+}
+
+a {
+  color:rgb(213, 182, 26);
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 20px;
+  margin: 0 10px;
+  color: rgb(213, 182, 26);
+  text-decoration: none;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #061f44;
+    font-family: 'Poppins', sans-serif;}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(213, 182, 26);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(213, 182, 26);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #031127;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(213, 182, 26);
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(241, 211, 61);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .signup {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 20px; 
+  }
+
+
+

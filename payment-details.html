@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Tinos:wght@700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .payment-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #090765;
+            color: #d7c121;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: #070f40;
+        }
+
+        .success-banner {
+            background-color: rgba(13, 187, 30, 0.457); 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0; 
+            border-color: #060441;
+            margin-bottom: 20px;
+            display: none;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999; 
+        }
+    </style>
+</head>
+<body>
+    <div class="success-banner" id="successBanner">
+        Payment Complete! You will be redirected to the home page
+    </div>
+    <div class="payment-container">
+        <h2>Payment Details</h2>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required pattern="[0-9]{16}" title="Enter a valid 16-digit card number">
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required pattern="(0[1-9]|1[0-2])\/20[0-9]{2}" title="Enter a valid expiry date (MM/YYYY)">
+
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" required pattern="[0-9]{3}" title="Enter a valid 3-digit CVV">
+
+            <button type="button" onclick="completePayment()">Complete Payment</button>
+        </form>
+    </div>
+
+    <script>
+        function completePayment() {
+            
+            var cardNumberInput = document.getElementById('cardNumber');
+            if (!cardNumberInput.checkValidity()) {
+                alert("Please enter a valid 16-digit card number.");
+                return;
+            }
+
+          
+            var expiryDateInput = document.getElementById('expiryDate');
+            if (!expiryDateInput.checkValidity()) {
+                alert("Please enter a valid expiry date in the format MM/YYYY.");
+                return;
+            }
+
+            
+            var cvvInput = document.getElementById('cvv');
+            if (!cvvInput.checkValidity()) {
+                alert("Please enter a valid 3-digit CVV.");
+                return;
+            }
+
+            
+            var successBanner = document.getElementById('successBanner');
+            successBanner.style.display = 'block';
+
+            setTimeout(function () {
+                window.location.href = 'index.html'; 
+            }, 2000); 
+        }
+    </script>
+</body>
+</html>

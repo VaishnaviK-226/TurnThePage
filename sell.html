@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell</title>
+    <link rel="stylesheet" href="sell.css">
+    <script src="sell.js"></script>
+    <link rel="shortcut icon" href="Blue White Simple Aesthetic Book Cafe Logo (2).png" type="image/x-icon">
+
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Tinos:wght@700&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/abf9f290bb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="paymentBanner" class="payment-banner"></div>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="guideToSell.html">Guide to Sell</a>
+        <a href="buy.html">Buy</a>
+        <a href="sell.html">Sell</a>
+        <div class="dropdown">
+          <button class="dropbtn">Clubs
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fiction.html">Fiction</a>
+            <a href="nonfiction.html">Non Fiction</a>
+            <a href="education.html">Education</a>
+          </div>
+        </div>
+        
+        <a href="aboutus.html">About Us</a>
+        <a href="help.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+
+        <div class="signup">
+          <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+          <a href="login.html">Login</a>
+        <a href="sign_up.html">Sign Up</a>
+        </div>
+      </div>
+      <header>Sell Your Book</header>
+    <div class="container">
+        
+        <form id="bookForm">
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" required>
+
+            <label>Book Condition:</label>
+            <br>
+            <div>
+                <input type="radio" name="condition" value="excellent" checked>
+                <label for="excellent">Excellent</label>
+
+                <input type="radio" name="condition" value="good">
+                <label for="good">Good</label>
+
+                <input type="radio" name="condition" value="fair">
+                <label for="fair">Fair</label>
+
+                <input type="radio" name="condition" value="bad">
+                <label for="bad">Bad</label>
+            </div>
+
+            <label for="review">Book Review:</label>
+            <textarea id="review" rows="4"></textarea>
+
+            <label for="originalPrice">Original Price:</label>
+            <input type="number" id="originalPrice" required>
+
+            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+
+            <label for="calculatedPrice">Calculated Price:</label>
+            <input type="text" id="calculatedPrice" readonly>
+
+            <h1>Your Details:</h1>
+
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="number" id="contact" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" rows="4"></textarea>
+
+            <h1>Payment Details:</h1>
+            <label for="upiId">UPI ID:</label>
+<input type="text" id="upiId" required>
+
+            
+            
+            
+
+            <button type="button" onclick="proceed()">Proceed</button>
+
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+          
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="help.html">FAQs</a></li>
+          
+          
+      </ul>
+      <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-reddit"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    
+      </div>
+      </div>
+    
+
+  
+</body>
+</html>

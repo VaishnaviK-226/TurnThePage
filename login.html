@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <link rel="shortcut icon" href="Blue White Simple Aesthetic Book Cafe Logo (2).png" type="image/x-icon">
+   
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Tinos:wght@700&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/abf9f290bb.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="guideToSell.html">Guide to Sell</a>
+        <a href="buy.html">Buy</a>
+        <a href="sell.html">Sell</a>
+        <div class="dropdown">
+          <button class="dropbtn">Clubs
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fiction.html">Fiction</a>
+            <a href="nonfiction.html">Non Fiction</a>
+            <a href="education.html">Education</a>
+          </div>
+        </div>
+        
+        <a href="aboutus.html">About Us</a>
+        <a href="help.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+
+        <div class="signup">
+          <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+          <a href="login.html">Login</a>
+        <a href="sign_up.html">Sign Up</a>
+        </div>
+      </div>
+</header>
+<div class="container">
+  <div class="login-pic"></div>
+    
+    <div class="login-form">
+      <form id="login-form">
+          <div class="form-title">
+              Login
+          </div>
+          <div class="form-input">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username">
+          </div>
+          
+          <div class="form-input">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+          </div>
+          <br>
+          <div class="form-input">
+              <button id="login-btn" type="submit">Login</button>
+          </div>
+          <br>
+          <p class="fp">
+              <a href="#" onclick="fp()">Forgot Password?</a>
+              <br><br>
+              <a href="sign_up.html">New User?</a>
+          </p>
+      </form>
+  </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            // Display user information or perform actions based on login
+            console.log('User details:', user);
+        }
+    });
+</script>
+</body> 
+</html>

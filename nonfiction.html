@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clubs.css">
+    <link href='https://fonts.googleapis.com/css?family=Eczar' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Neuton' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Book Comments</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="guideToSell.html">Guide to Sell</a>
+          <a href="buy.html">Buy</a>
+          <a href="sell.html">Sell</a>
+          <div class="dropdown">
+            <button class="dropbtn">Clubs
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="fiction.html">Fiction</a>
+              <a href="nonfiction.html">Non Fiction</a>
+              <a href="education.html">Education</a>
+            </div>
+          </div>
+          <a href="help.html">FAQ</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          
+      
+          <div class="signup">
+            <a href="addToCart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html">Login</a>
+          <a href="sign_up.html">Sign Up</a>
+          </div>
+        </div>
+        </header>
+    <div class="container">
+        <h1>Knowledge Hub: Unveiling Truths Through Non-Fiction</h1>
+        <div class="intro">Welcome to our Non-Fiction Enclave—a dynamic community where truth seekers converge. <br>
+            Embark on intellectual journeys, exploring the boundless realms of real-world narratives. Unveil insights, share perspectives, and connect with fellow enthusiasts who appreciate the power of facts. Whether you're passionate about history, science, or personal development, this forum is your haven for engaging discussions, exchanging knowledge, and celebrating the richness of non-fiction literature. 
+            Join us on a collective quest for enlightenment and discovery!<br></div>
+        <div id="comments-container">
+        </div>
+        <form id="comment-form" action="/comment" method="POST">
+          <h5><div class="head"><label for="username">Your Name:</label></div></h5>
+          <input type="text" id="username" name="username" required>
+          <h5><div class="head"><label for="bookcomment">Write your musings</label></div></h5>
+          <textarea id="bookcomment" rows="4" cols="20" name="bookcomment" required></textarea>
+          <button type="submit">Post</button>
+        </form>
+    </div>
+    <br>
+    <div class="ebook">
+        "Explore a world of literary wonders! Click the link to discover a vast collection of ebooks and audiobooks."<br>
+    <a href="https://www.free-ebooks.net/general-non-fiction#gs.2wb90f">Discover Tales</a>
+    </div>
+
+    <script src="clubsNonFiction.js"></script>
+    <footer>
+        <div class="footer">
+          <ul>
+            
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="help.html">FAQs</a></li>
+            
+            
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-reddit"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        
+        </div>
+        </div>
+        </footer>
+</body>
+</html>

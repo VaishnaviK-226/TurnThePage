@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Tinos:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+    width:100%;
+    /*position:fixed;*/
+    overflow: hidden;
+    background-color: #061f44;
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(213, 182, 26);
+    text-align: center;
+    padding: 14px 20px; 
+    text-decoration: none;
+}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(213, 182, 26);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #031127;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(213, 182, 26);
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(241, 211, 61);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .signup {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 20px; 
+  }
+a {
+  color:rgb(213, 182, 26);
+  text-decoration: none;
+}
+
+
+h2{
+    text-align: center;
+    color: rgba(90, 54, 1, 0.938);
+    font-family: "Trirong", serif;
+    position:relative;
+    top:40px;
+    font-size: 60px;
+}
+h4{
+  text-align: center;
+  position:relative;
+  
+  top:30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:20px;
+  color:rgb(158, 96, 3);
+  margin-top:0;
+  padding-top:-200px;
+}
+.content{
+    color:black;
+    font-family: 'Alegreya';
+    font-size: 22px;
+    position: relative;
+    top:40px;
+    text-align: justify;
+    margin-left:70px;
+    margin-right: 70px;
+}
+.rating{
+  position:relative;
+  top:70px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(11, 0, 41);
+    background-color: rgb(249, 248, 225);
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+}
+

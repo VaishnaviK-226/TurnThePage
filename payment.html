@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="sell.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="sell.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Payment Details</h1>
+        <form>
+            <h3>For recieving through UPI</h3>
+            <div>
+                <label for="upiID">UPI ID:</label>
+                <input type="text" id="upiID">
+            </div>
+            <br>
+            <h3>For recieving in Bank Account:</h3>
+            <div>
+                <label for="accountNumber">Account Number:</label>
+                <input type="text" id="accountNumber">
+                <br>
+                <label for="ifscCode">IFSC Code:</label>
+                <input type="text" id="ifscCode">
+            </div>
+
+            <button type="button" onclick="submitDetails()">Submit</button>
+        </form>
+    </div>
+  
+</body>
+</html>

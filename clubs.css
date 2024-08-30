@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Tinos:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container{
+  position:relative;
+  top:10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#comments-container {
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.comment {
+    margin:5px 100px 10px;
+    border: 1px solid #4a0c0c;
+    padding:10px 100px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+form {
+    margin-top: 20px;
+    
+    font-family: 'Alegreya';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 15px;
+}
+
+button {
+    background-color: #3f2a03;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #977609;
+}
+
+.intro {
+    text-align:center;
+    font-family: 'Eczar';
+    font-size:20px;
+}
+.head{
+    font-family: 'Neuton';
+    text-align: center;
+    font-size: 25px;
+    color:#02163a;
+}
+.ebook{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Eczar';
+}
+.navbar {
+    overflow: hidden;
+    background-color: #061f44;
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(213, 182, 26);
+    text-align: center;
+    padding: 14px 20px; 
+    text-decoration: none;
+}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(213, 182, 26);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #031127;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(213, 182, 26);
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(241, 211, 61);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .signup {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 20px; 
+  }
+a {
+  color:rgb(213, 182, 26);
+  text-decoration: none;
+}
+.footer {
+    position: relative;
+    width: 97%;
+    color: rgb(213, 182, 26);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins';
+    background-color: #061f44; 
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    margin: 0 15px;
+    color: rgb(213, 182, 26);
+    text-decoration: none;
+  }    
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 15px;
+  }

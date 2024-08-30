@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="Blue White Simple Aesthetic Book Cafe Logo (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="sign_up.css">
+    <script src="sign_up.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Tinos:wght@700&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/abf9f290bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="guideToSell.html">Guide to Sell</a>
+        <a href="buy.html">Buy</a>
+        <a href="sell.html">Sell</a>
+        <div class="dropdown">
+          <button class="dropbtn">Clubs
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fiction.html">Fiction</a>
+            <a href="nonfiction.html">Non Fiction</a>
+            <a href="education.html">Education</a>
+          </div>
+        </div>
+        
+        <a href="aboutus.html">About Us</a>
+        <a href="help.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+
+        <div class="sign-up">
+          <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+          <a href="login.html">Login</a>
+        <a href="sign_up.html">Sign Up</a>
+        </div>
+      </div>
+</header>
+
+    <form id="signupForm" onsubmit="return submitForm(event)">
+        <div class="container">
+    <div class="signUpImg"></div>
+    <div class="signUp">
+          <h1 class="heading1">Sign Up </h1>
+          <p class="p">Please fill in this form to create an account.</p>
+          
+          <label for="username">Username : </label>
+          <input type="text" placeholder="Enter your name" name="username" required>
+          <br>
+          <label for="dob">Date of Birth : </label>
+          <input type="date" id="dob" name="dob">
+          <br>
+          <label for="email">Email : </label>
+          <input type="text" placeholder="Enter your Email" name="email" required>
+          <br>
+          <label for="psw">Password : </label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+          <label for="confirm_psw">Confirm Password : </label>
+          <input type="password" placeholder="Re-enter Password" name="confirm_psw" required>
+         
+          
+            
+          <p class="terms">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a> .</p>
+          <br>
+          <div id="signup">
+            <button type="submit" >Sign Up</button>
+          </div>
+          <a href="login.html" class="login">Already a User? Login</a>
+        </div>
+        </div>
+      </form>
+      <div class="footer">
+        <ul>
+          
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="help.html">FAQs</a></li>
+          
+          
+      </ul>
+      <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-reddit"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    
+      </div>
+      </div>
+    
+</body>
+</html>
